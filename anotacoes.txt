@@ -1,0 +1,30 @@
+- Os dois são open-source, mas o PostgreSQL é mais.
+- Suportam todos* os SO e linguagens. * todos é uma generalização.
+
+-- QUEM USA?
+- MySQL:
+-- Facebook
+-- Google
+-- Github
+-- NASA
+-- Netflix
+
+- PostgreSQL:
+-- Apple
+-- Facebook
+-- Instagram
+-- Skype
+-- Spotify
+
+MySQL não é case-sensitive = Leonardo, leonardo
+PostgreSQL é case-sensitive = Leonardo, Leonardo
+
+------ PERFORMANCE ------
+
+Geralmente para grandes volumes ou consultas complexas, 
+o PostgreSQL tende a ser um pouco mais rapido.
+PORT=5432
+
+MySQL geralmente é mais rápido para pequenos volumes 
+OU consultas simples.
+PORT=3306
