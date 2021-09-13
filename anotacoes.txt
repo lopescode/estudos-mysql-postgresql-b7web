@@ -28,3 +28,18 @@ PORT=5432
 MySQL geralmente é mais rápido para pequenos volumes 
 OU consultas simples.
 PORT=3306
+
+-- Baixando MySQL
+https://dev.mysql.com/downloads/
+
+-- Baixando PostgreSQL
+https://www.postgresql.org/download/
+
+-- Baixando um cliente SQL
+- HeidiSQL
+https://www.heidisql.com/download.php
+- DBeaver
+https://dbeaver.io/download/
+- Sequel
+https://sequelpro.com/download
+
