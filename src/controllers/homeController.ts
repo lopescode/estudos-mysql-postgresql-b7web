@@ -7,16 +7,31 @@ import { Request, Response } from "express";
 import { sequelize } from "../connection/postgres";
 
 import { Product } from "../models/Product";
+import { User } from "../models/User";
 
 export const home = async (req: Request, res: Response) => {
 
-    
+  let users = await User.findAll();
+
+  /** Para exibir todos os usuários no console */
+  //console.log("USUÁRIOS: ", JSON.stringify(users));
+
+
+
+
+
+
+
+
+
+  /*
   try {
     await sequelize.authenticate();
     console.log("Conexão estabelecida com sucesso!");
   } catch (err) {
     console.log(err);
   }
+  */
 
   let age: number = 90;
   let showOld: boolean = false;
@@ -35,5 +50,6 @@ export const home = async (req: Request, res: Response) => {
     products: list,
     expensives: expensiveList,
     frasesDoDia: [],
+    users
   });
 };
