@@ -43,3 +43,11 @@ https://dbeaver.io/download/
 - Sequel
 https://sequelpro.com/download
 
+-- ORM
+Object Relational Mapper (Mapeamento objeto-relacional)
+Adonis -> Node
+Laravel -> PHP
+Sequelize -> Node.js ORM for PostgreSQL, MySQL, MariaDB, SQLite and Microsoft SQL Server
+
+
+
