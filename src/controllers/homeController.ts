@@ -20,6 +20,7 @@ export const home = async (req: Request, res: Response) => {
   //console.log("USUÁRIOS: ", JSON.stringify(users));
 
   /** Tipos de consulta 1 */
+  /*
   let users = await User.findAll({
     //attributes: ['name', 'age']
     //attributes: { exclude: ['id']}
@@ -27,7 +28,28 @@ export const home = async (req: Request, res: Response) => {
     //where: { name: 'leonardo', age: '20' } // Filtragem E
     where: {
       //[Op.or]: [{ age: 24 }, { name: "Natan" }], // Filtragem "OU"
-      age: { [Op.or]: [24, 23] }, // Filtragem "OU"
+      //age: { [Op.or]: [24, 23] }, // Filtragem "OU"
+    },
+  });
+  */
+
+  /** Tipos de consulta 2 */
+  let searchName: string = 'eo'
+  let users = await User.findAll({
+    where: {
+      //age: {
+        //[Op.gt]: 25, // > 25
+        //[Op.gte]: 25, // >= 25
+        //[Op.lt]: 25, // < 25
+        //[Op.lte]: 25, // <= 25
+        //[Op.between]: [25, 28] // entre 25 e 28
+        //[Op.notBetween]: [25, 28] // não está entre 25 e 28
+        //[Op.notIn]: [25, 28] // não tem 25 e nem 28
+      //},
+      name: {
+        //[Op.like]: 'le%', // Onde começar por le
+        [Op.like]: `%${searchName}%` // Onde tiver eo
+      }
     },
   });
 

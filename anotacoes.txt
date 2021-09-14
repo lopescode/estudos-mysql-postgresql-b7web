@@ -49,5 +49,6 @@ Adonis -> Node
 Laravel -> PHP
 Sequelize -> Node.js ORM for PostgreSQL, MySQL, MariaDB, SQLite and Microsoft SQL Server
 
-
-
+// GT =  Greather than 
+// E = Equal
+// LT = Lower Than
